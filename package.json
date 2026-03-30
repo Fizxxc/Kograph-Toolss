@@ -1,0 +1,22 @@
+{
+  "name": "kograph-tools",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.2",
+    "@imgly/background-removal": "^1.6.0",
+    "jsbarcode": "^3.12.1",
+    "mammoth": "^1.8.0",
+    "next": "15.5.3",
+    "pdf-lib": "^1.17.1",
+    "qr-code-styling": "^1.9.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  }
+}
