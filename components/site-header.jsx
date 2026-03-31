@@ -5,10 +5,14 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
 const links = [
+  { href: '/', label: 'Home' },
   { href: '/qr', label: 'QR' },
   { href: '/barcode', label: 'Barcode' },
   { href: '/video', label: 'Video' },
+  { href: '/audio-extractor', label: 'Audio' },
   { href: '/remove-background', label: 'Remove BG' },
+  { href: '/blur-face', label: 'Blur Face' },
+  { href: '/image-info', label: 'Image Info' },
   { href: '/convert', label: 'Convert' }
 ];
 

@@ -5,7 +5,7 @@ const tools = [
   {
     href: '/qr',
     label: 'QR Generator',
-    desc: 'Buat QR dari link, teks, atau URL lalu sesuaikan warna, bentuk, dan logo.',
+    desc: 'Buat QR dari link, teks, atau URL lalu atur warna, bentuk, dan logo.',
     badge: 'QR',
     note: 'Preview langsung'
   },
@@ -21,7 +21,14 @@ const tools = [
     label: 'Video Tools',
     desc: 'Kompres video atau tingkatkan resolusi dari satu halaman yang ringkas.',
     badge: 'Video',
-    note: 'Kompres & HD'
+    note: 'Compress & HD'
+  },
+  {
+    href: '/audio-extractor',
+    label: 'Audio Extractor',
+    desc: 'Ambil audio dari video dan simpan hasilnya dalam format MP3.',
+    badge: 'Audio',
+    note: 'Extract MP3'
   },
   {
     href: '/remove-background',
@@ -31,9 +38,23 @@ const tools = [
     note: 'Standard & HD'
   },
   {
+    href: '/blur-face',
+    label: 'Blur Face',
+    desc: 'Deteksi wajah lalu blur otomatis untuk hasil yang lebih aman dibagikan.',
+    badge: 'Privacy',
+    note: 'Auto blur'
+  },
+  {
+    href: '/image-info',
+    label: 'Image Info',
+    desc: 'Lihat detail gambar seperti ukuran, format, resolusi, author, dan metadata.',
+    badge: 'Info',
+    note: 'Metadata'
+  },
+  {
     href: '/convert',
     label: 'Convert Tools',
-    desc: 'Konversi dokumen, gambar, dan PDF tanpa halaman yang ramai.',
+    desc: 'Konversi dokumen, gambar, dan PDF dalam satu tempat.',
     badge: 'Files',
     note: 'Multi tool'
   }
@@ -58,9 +79,9 @@ export default function HomePage() {
     <>
       <PageHero
         eyebrow="Kograph Tools"
-        title="Tools simpel untuk gambar, video, QR, dan file."
+        title="Alat praktis untuk gambar, video, audio, QR, dan file."
         description="Pilih tool yang dibutuhkan lalu mulai."
-        cta="Lihat tools"
+        cta="Lihat semua tools"
         ctaHref="#tools"
       />
 
@@ -69,9 +90,12 @@ export default function HomePage() {
           <div className="home-category-row">
             <span className="home-category-chip">QR & Barcode</span>
             <span className="home-category-chip">Video</span>
+            <span className="home-category-chip">Audio</span>
             <span className="home-category-chip">Images</span>
             <span className="home-category-chip">Documents</span>
             <span className="home-category-chip">PDF</span>
+            <span className="home-category-chip">Privacy</span>
+            <span className="home-category-chip">Metadata</span>
           </div>
         </div>
       </section>

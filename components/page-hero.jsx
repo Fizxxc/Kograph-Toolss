@@ -1,4 +1,10 @@
-export default function PageHero({ eyebrow, title, description, cta, ctaHref = '/terms' }) {
+export default function PageHero({
+  eyebrow,
+  title,
+  description,
+  cta,
+  ctaHref = '#'
+}) {
   return (
     <section className="page-hero">
       <div className="wrap page-hero-grid minimal-hero-grid">
@@ -6,9 +12,12 @@ export default function PageHero({ eyebrow, title, description, cta, ctaHref = '
           {eyebrow ? <div className="eyebrow">{eyebrow}</div> : null}
           <h1 className="page-title">{title}</h1>
           <p className="page-copy">{description}</p>
+
           {cta ? (
             <div className="page-hero-actions">
-              <a className="button primary" href={ctaHref}>{cta}</a>
+              <a className="button primary" href={ctaHref}>
+                {cta}
+              </a>
             </div>
           ) : null}
         </div>
